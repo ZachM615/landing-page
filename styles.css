@@ -55,11 +55,12 @@
   
   .hero-content {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: stretch;
     gap: 20px;
-  }
+    height: 100%;
+}
   
   .hero-text h2 {
     font-size: 48px;
@@ -74,6 +75,11 @@
     margin-bottom: 20px;
   }
   
+  .hero-text {
+    flex-shrink: 1;
+    max-width: 50%;
+  }
+
   .hero img {
     max-width: 500px;
     width: 100%;
@@ -89,6 +95,7 @@
     font-weight: bold;
     border-radius: 6px;
     cursor: pointer;
+    max-width: 25%;
   }
   
   /* Info Section */
@@ -204,3 +211,18 @@
     font-size: 14px;
   }
   
+  .hero-text, .placeholder {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+  }
+
+
+  .placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: gray;
+    text-align: center;
+  }
