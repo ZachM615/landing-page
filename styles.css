@@ -96,6 +96,9 @@
     border-radius: 6px;
     cursor: pointer;
     max-width: 25%;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
   }
   
   /* Info Section */
